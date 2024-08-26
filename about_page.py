@@ -25,7 +25,7 @@ def about_page():
     )
 
     # 显示图片路径
-    image_path = '/workspaces/lanngchain_streamlit_private_pleasecommit/22final2/images/PixPin_2024-08-23_11-50-16.png'
+    image_path = 'images/PixPin_2024-08-23_11-50-16.png'
     
     # 使用 st.image() 显示图片
     st.image(image_path)

@@ -7,7 +7,7 @@ def upload_to_gcp_page():
 
     # 读取 GCP credentials
     credentials = service_account.Credentials.from_service_account_file(
-        '/workspaces/lanngchain_streamlit_private_pleasecommit/streamlit-gemini-ccf60-c9d613f7d829.json'
+        'streamlit-gemini-ccf60-c9d613f7d829.json'
     )
     
     # 初始化 GCP Storage 客户端

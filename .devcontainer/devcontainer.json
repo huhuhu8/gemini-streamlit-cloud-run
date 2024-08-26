@@ -1,0 +1,10 @@
+{
+    "name": "Streamlit with Docker",
+    "image": "mcr.microsoft.com/devcontainers/python:3.9",
+    "features": {
+      "docker-in-docker": "latest"
+    },
+    "forwardPorts": [8501],
+    "postCreateCommand": "pip install streamlit"
+  }
+  

@@ -5,7 +5,7 @@ import requests
 
 # 初始化 Firebase 应用
 if not firebase_admin._apps:
-    cred = credentials.Certificate('/workspaces/lanngchain_streamlit_private_pleasecommit/streamlit-gemini-ccf60-c9d613f7d829.json')
+    cred = credentials.Certificate('streamlit-gemini-ccf60-c9d613f7d829.json')
     firebase_admin.initialize_app(cred)
 
 def login_page(db):

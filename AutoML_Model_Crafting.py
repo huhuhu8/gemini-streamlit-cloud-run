@@ -31,7 +31,7 @@ def model_page():
     st.title("モデル作成")
 
     # 使用相对路径读取数据
-    data_path = "../23GCP8.26-with-cloud-run/uploaded_files_copy/downloadable_data.csv"
+    data_path = "uploaded_files_copy/downloadable_data.csv"
     
     # 加载数据
     if os.path.exists(data_path):

@@ -16,7 +16,8 @@ from AutoML_Introduction import introduction_page
 from upload_data_to_firestore import upload_data_to_firestore
 from about_page import about_page
 from upload_to_gcp import upload_to_gcp_page
-from gcp_monitoring import gcp_monitoring_page  # 新增导入
+from gcp_monitoring import gcp_monitoring_page
+from rag_with_bigquery import rag_with_bigquery_page  # 新增导入
 
 # 加载环境变量
 load_dotenv()
@@ -53,6 +54,7 @@ def main():
         "Register", 
         "Chat with Gemini", 
         "Gemini with BigQuery", 
+        "RAG with BigQuery",  # 新增选项
         "😊AutoML Introduction ", 
         "🌟AutoML: Overview", 
         "🔍AutoML: EDA Insights", 
@@ -72,6 +74,8 @@ def main():
         chat_with_gemini_page(db, GOOGLE_API_KEY)
     elif page == "Gemini with BigQuery":
         gemini_with_bigquery_page(db, GOOGLE_API_KEY, credentials_file_path)
+    elif page == "RAG with BigQuery":
+        rag_with_bigquery_page(db, GOOGLE_API_KEY, credentials_file_path)  # 调用 RAG with BigQuery 页面
     elif page == "😊AutoML Introduction ":
         introduction_page()
     elif page == "🌟AutoML: Overview":
